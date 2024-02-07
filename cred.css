@@ -1,0 +1,494 @@
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(assets/fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Regular;
+    src: url(assets/fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family:Gilroy-SemiBold;
+    src: url(assets/fonts/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+    font-family:cred-font1;
+    src: url(assets/fonts/KFOlCnqEu92Fr1MmEU9fBBc4.ttf);
+}
+
+@font-face {
+    font-family:cred-font2;
+    src: url(assets/fonts/KFOmCnqEu92Fr1Mu4mxK.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy-Regular;
+}
+
+html,body{
+    height: 100vh;
+    width: 100%;
+}
+
+.main{
+    min-height:100vh ;
+    width: 100%;
+}
+
+nav{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 0vw 17vw;
+}
+nav img{
+    width: 2.8vw;
+}
+.right a{
+    text-decoration: none;
+    color: wheat;
+    font-family: Gilroy-SemiBold;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 20vw;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.part1{
+    width: 100%;
+    height: 80vh;
+    background-color: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+
+}
+
+.part1 h1{
+    margin-top: -10vh;
+    font-size: 7vw;
+    font-family: Gilroy-SemiBold;
+    text-align: center;
+}
+
+.part1 p{
+    font-size: 1.5vw;
+    font-family: Gilroy-SemiBold;
+    text-align: center;
+}
+
+.part1 button{
+    padding: 1vw 3vw;
+    font-size: 1.2vw;
+    border-radius: 50px;
+    font-family: Gilroy-SemiBold;
+    border: none;
+}
+
+.part1 button:hover{
+    color: #fff;
+    border: 1px solid white;
+    background-color: #111;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    cursor: pointer;
+}
+
+.part2{
+   
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/imgs/video-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+}
+
+.part2 img{
+    height: 85vh;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+
+#img3{
+    position: absolute;
+    bottom:-5vh ;
+    z-index: 3;
+}
+
+#img2,#img4 {
+    position: absolute;
+   bottom:-13vh ;
+  
+    z-index: 2;
+}
+#img2{
+left: 61vh;
+}
+#img4{
+  left: 105vh;
+  
+}
+#img1, #img5{
+   bottom:-23vh ;
+    position: absolute;
+}
+#img1{
+  
+    right: 60vw;
+    z-index: 1;
+}
+#img5{
+    left: 60vw;
+    z-index: 1;
+}
+.part3 {
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+}
+
+.part3 .left {
+    width: 50%;
+    min-height: 100vh;
+    /* background-color: red; */
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10v;
+
+
+
+}
+
+.part3 .left .scroll-txt {
+    width: 100%;
+    position: absolute;
+    bottom: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-bottom: 12vh; */
+    gap: 4vh;
+}
+
+.part3 .left #scroll-2 h1 {
+    width: 100vw;
+    padding-left: 35vw;
+
+}
+
+.part3 .left #scroll-3 h1 {
+    width: 100vw;
+    padding-left: 36vw;
+
+}
+
+.part3 .left #scroll-4 h1 {
+    width: 100vw;
+    padding-left: 36vw;
+
+}
+
+
+
+#scroll-2,
+#scroll-3,
+#scroll-4 {
+    opacity: 0;
+
+}
+
+.part3 .left .scroll-txt h1 {
+    font-size: 12.5vh;
+    font-family: Gilroy-Bold;
+
+}
+
+.part3 .left .scroll-txt p {
+    font-size: 2.5vh;
+    width: 75vh;
+    font-family: Gilroy-semiBold;
+    margin-left: 18vh;
+}
+
+.p3-right {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    width: 19vw;
+    height: 62vh;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 3vh;
+    padding-left: 3.4%;
+
+    border-radius: 50px;
+    border: 2.25vh solid rgb(18, 17, 17);
+    overflow: hidden;
+}
+
+.phone img {
+    width: 100%;
+
+}
+
+.phone-img {
+    width: 400%;
+    display: flex;
+    /* margin-left: -285%; */
+    margin-bottom: 2vh;
+}
+
+.part4{
+    height: 50vh;
+    width:100%;
+    background: url("assets/imgs/multiple phone.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.part5{
+    height: 100vh;
+    width: 100%;
+    background: white;
+    background-image: url("assets/imgs/security-bg.jpg");
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    color: white;
+}
+.part5 .leftBox{
+    height: 100vh;
+    width: 65%;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vh;
+}
+
+.part5 .leftBox h1{
+   font-size: 15vh;
+   font-family: Gilroy-Bold;
+}
+
+.part5 .leftBox p{
+   font-family: Gilroy-semiBold;
+   font-size: 2.9vh;
+   width: 74%;
+   margin-left: 13vh;
+}
+
+.part5 .leftBox button{
+    width: 40vh;
+    height: 8.5vh;
+    border-radius: 30px;
+    border: none;
+    font-size: 3vh;
+    font-family: Gilroy-Bold;
+    margin-top: 4vh;
+    margin-right: 48vh;
+}
+
+.part5 button:hover{
+    color: #111;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    cursor: pointer;
+}
+
+/*------------- making the site responsive--------------- */
+
+@media(max-width:500px){
+    nav{
+        height: 15vh;
+       
+    }
+
+    nav img {
+        width: 10.8vw;
+    }
+    nav .right{
+        width: 40vw;
+        margin-left: 16vh;
+    }
+
+    nav .right  a{
+        font-size: 1.7vh;
+        width: 25vh;
+    }
+
+    .part1 h1 {
+        font-size: 9vw;
+    }
+
+    .part1 p {
+        width: 80vw;
+        font-size: 5vw;
+    }
+
+    .part1 button {
+        padding: 5vw 10vw;
+        font-size: 5.2vw;
+        border-radius: 50px;
+        font-family: Gilroy-Bold;
+        border: none;
+    }
+
+
+    /* this the dog-security part */
+    .part5{
+         background-image: url(    "assets/imgs/security-bg-mobile.jpg");
+
+        background-position: center;
+        background-size: cover;
+    }
+
+    .part5 .leftBox h1 {
+        font-size: 5vh;
+        font-family: Gilroy-Bold;
+    }
+
+    .part5 .leftBox p {
+        font-family: Gilroy-semiBold;
+        font-size: 2.9vh;
+        width: 74%;
+        margin-left: -2vh;
+    }
+    
+   .part5 .leftBox button {
+        width: 33vh;
+        height: 7.5vh;
+        border-radius: 30px;
+        border: none;
+        font-size: 2vh;
+        font-family: Gilroy-Bold;
+        margin-top: 4vh;
+        margin-right: -14vh;
+    }
+
+    .part5 button:hover{
+        color: #111;
+        border: 1px solid black;
+        background-color: transparent;
+        transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+        cursor: pointer;
+    }
+
+
+    /* part3 responsive */
+
+    
+    .part3 {
+        display: flex;
+        flex-direction:column;
+        height: 10vh;
+      transition: none;
+       
+     
+    }
+
+    .part3 .left{
+        height: 40vh;
+        font-size: 2vh;
+    }
+
+    .part3 .left .scroll-txt h1 {
+        font-size: 4.5vh;
+        font-family: Gilroy-Bold;
+        margin-left: 18vh;
+        width: 50vw;
+    }
+
+    .part3 .left #scroll-2 h1 {
+        font-size: 4.5vh;
+        font-family: Gilroy-Bold;
+        margin-left: 7vh;
+        width: 100vw;
+    }
+
+    .part3 .left #scroll-3 h1 {
+        font-size: 4.5vh;
+        font-family: Gilroy-Bold;
+        margin-left: 5vh;
+        width: 100vw;
+    }
+
+    .part3 .left #scroll-4 h1 {
+        font-size: 4.5vh;
+        font-family: Gilroy-Bold;
+        margin-left: 5vh;
+        width: 100vw;
+       
+    }
+
+    .part3 .left .scroll-txt p {
+        font-size: 2.5vh;
+        width: 37vh;
+        font-family: Gilroy-semiBold;
+        margin-left: 27vh;
+    }
+
+    .phone {
+        width: 68vw;
+        background-color: black;
+    }
+
+    .p3-right {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .p3-right {
+        position: absolute;
+        top: 20vh;
+       
+    }
+
+    .part3{
+        position: relative;
+    }
+
+.part3 .left {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: -30vh;
+    right: 10vh;
+    }
+
+    
+
+}
